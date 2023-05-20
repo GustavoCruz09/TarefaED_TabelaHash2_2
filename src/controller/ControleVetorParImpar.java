@@ -17,7 +17,6 @@ public class ControleVetorParImpar {
 
 	public void PreencheVetor() {
 		int tam = (int) (Math.random() * 10) + 1; // Tamanho Vetor
-		System.out.println("Vetores de tamanho " + tam);
 		for (int i = 0; i < tam; i++) {
 			int valor = (int) (Math.random() * 20);
 			int pos = HashCode(valor);
@@ -49,6 +48,7 @@ public class ControleVetorParImpar {
 
 			switch (num) {
 			case 0:
+				System.out.println("Vetor de Pares");
 				int tam = vtlista[0].size();
 				for (int i = 0; i < tam; i++) {
 					try {
@@ -57,9 +57,10 @@ public class ControleVetorParImpar {
 						e.printStackTrace();
 					}
 				}
-				System.out.print("\n");
+				System.out.print("\n\n");
 				break;
 			case 1:
+				System.out.println("Vetor de Impares");
 				tam = vtlista[1].size();
 				for (int i = 0; i < tam; i++) {
 					try {
@@ -68,7 +69,7 @@ public class ControleVetorParImpar {
 						e.printStackTrace();
 					}
 				}
-				System.out.print("\n");
+				System.out.print("\n\n");
 				break;
 			case 9:
 				JOptionPane.showMessageDialog(null, "Programa Finalizado");
