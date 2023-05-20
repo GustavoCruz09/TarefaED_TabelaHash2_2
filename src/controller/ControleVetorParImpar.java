@@ -75,7 +75,7 @@ public class ControleVetorParImpar {
 				JOptionPane.showMessageDialog(null, "Programa Finalizado");
 				break;
 			default:
-				JOptionPane.showMessageDialog(null, "Opção Inválida\n Digite Novamente");
+				JOptionPane.showMessageDialog(null, "Opção Inválida Digite Novamente", "ERRO", JOptionPane.ERROR_MESSAGE);
 
 			}
 
